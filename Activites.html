@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nos Activités - Kin Marché de Boma</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(rgba(255,255,255,0.30), rgba(255,255,255,0.30)),
+                  url('grace.jpeg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    header {
+      background-color: red;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      max-width: 1200px;
+      margin: auto;
+      padding: 30px;
+    }
+    h2 {
+      color: red;
+      margin-top: 40px;
+    }
+    .activity-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 20px;
+    }
+    .activity-card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+    .activity-card:hover {
+      transform: translateY(-5px);
+    }
+    .activity-card h3 {
+      margin-top: 0;
+      color: red;
+    }
+    .activity-card p {
+      font-size: 0.95rem;
+    }
+    .activity-icon {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+      margin-top: 50px;
+      color: red;
+    }
+    .btn-retour {
+      display: inline-block;
+      margin: 40px auto 0 auto;
+      padding: 12px 25px;
+      background-color: red;
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease;
+      text-align: center;
+    }
+    .btn-retour:hover {
+      background-color: #002850;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Kin Marché de Boma</h1>
+    <p>Bienvenue dans votre centre commercial moderne et connecté à Boma</p>
+  </header>
+
+  <main>
+    <h2>Nos Activités</h2>
+    <div class="activity-grid">
+      <div class="activity-card">
+        <div class="activity-icon">🥦</div>
+        <h3>Produits alimentaires</h3>
+        <p>Vente de produits frais, surgelés, et denrées alimentaires pour tous vos besoins quotidiens.</p>
+      </div>
+      <div class="activity-card">
+        <div class="activity-icon">👟</div>
+        <h3>Chaussures & vêtements</h3>
+        <p>Mode homme, femme et enfant : chaussures, t-shirts, robes, jeans, vestes...</p>
+      </div>
+      <div class="activity-card">
+        <div class="activity-icon">📦</div>
+        <h3>Vente en gros</h3>
+        <p>Commandes en gros pour les boutiques, épiceries et distributeurs locaux.</p>
+      </div>
+      <div class="activity-card">
+        <div class="activity-icon">🧴</div>
+        <h3>Produits de beauté</h3>
+        <p>Cosmétiques, parfums, lotions et autres produits pour le soin du corps et des cheveux.</p>
+      </div>
+      <div class="activity-card">
+        <div class="activity-icon">📱</div>
+        <h3>Téléphones et accessoires</h3>
+        <p>Smartphones, écouteurs, chargeurs, coques, gadgets tech et accessoires électroniques.</p>
+      </div>
+      <div class="activity-card">
+        <div class="activity-icon">🚚</div>
+        <h3>Livraison locale</h3>
+        <p>Service rapide de livraison à domicile à travers toute la ville de Boma.</p>
+    </div>
+
+    <div style="text-align: center;">
+      <a href="index.html" class="btn-retour">← Retour à l’accueil</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Kin Marché de Boma - Tous droits réservés.
+  </footer>
+
+</body>
+</html>

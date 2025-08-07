@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Nos Partenaires - Kin Marché de Boma</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
+                  url('g.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 20px;
+    }
+    h1 {
+      color: RED;
+      margin-bottom: 40px;
+      font-size: 2.8rem;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 10px 20px;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    }
+    .partners-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      width: 100%;
+      max-width: 1000px;
+    }
+    .partner-card {
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      min-height: 300px;
+      background-color: #f0f8ff;
+    }
+    .partner-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    }
+    .partner-logo {
+      max-width: 120px;
+      filter: grayscale(30%);
+      transition: filter 0.3s ease;
+    }
+    .partner-card:hover .partner-logo {
+      filter: none;
+    }
+    .partner-name {
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: RED;
+    }
+    .partner-comment {
+      font-size: 0.9rem;
+      color: #222;
+      flex-grow: 1;
+      padding: 0 10px;
+      text-align: justify;
+    }
+    footer {
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: RED;
+      background: rgba(255,255,255,0.9);
+      padding: 15px 25px;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 1000px;
+      text-align: center;
+    }
+    .btn-retour {
+      display: inline-block;
+      margin: 40px auto 0 auto;
+      padding: 12px 25px;
+      background-color: RED;
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease;
+      text-align: center;
+    }
+    .btn-retour:hover {
+      background-color: #002850;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Nos Partenaires</h1>
+
+  <div class="partners-grid">
+    <div class="partner-card" onclick="window.open('https://bralima.net', '_blank')">
+      <img src="bralima.jpg" alt="Bralima" class="partner-logo" />
+      <div class="partner-name">BRALIMA</div>
+      <div class="partner-comment">
+        Bralima est une entreprise leader dans la production et la distribution de boissons en RDC. Grâce à son engagement envers la qualité et la durabilité, elle soutient activement les marchés locaux.
+      </div>
+    </div>
+
+    <div class="partner-card" onclick="window.open('https://www.jumia.cd', '_blank')">
+      <img src="jumia.png" alt="Jumia RDC" class="partner-logo" />
+      <div class="partner-name">JUMIA RDC</div>
+      <div class="partner-comment">
+        Jumia RDC est une plateforme e-commerce de référence, proposant une large gamme de produits livrés rapidement partout au pays, soutenant le développement numérique du commerce.
+      </div>
+    </div>
+
+    <div class="partner-card" onclick="window.open('https://www.shoprite.co.za/', '_blank')">
+      <img src="shop.png" alt="Shoprite" class="partner-logo" />
+      <div class="partner-name">SHOPRITE</div>
+      <div class="partner-comment">
+        Shoprite est une chaîne de supermarchés internationale qui offre des produits de qualité à des prix abordables. Elle est un partenaire stratégique du Kin Marché de Boma.
+      </div>
+    </div>
+  </div>
+
+  <div style="width: 100%; max-width: 1000px; text-align: center; margin: 40px auto 0 auto;">
+    <a href=".html" class="btn-retour">← Retour à l’accueil</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Kin Marché de Boma - Tous droits réservés
+  </footer>
+
+</body>
+</html>

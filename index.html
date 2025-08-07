@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KIN MARCHÉ DE BOMA</title>
+  <!-- Animation du titre -->
+  <script>
+    let titre = " ✨ KIN MARCHÉ DE BOMA ✨ ";
+    let position = 0;
+    function defilerTitre() {
+      document.title = titre.substring(position) + titre.substring(0, position);
+      position = (position + 1) % titre.length;
+      setTimeout(defilerTitre, 250);
+    }
+    window.onload = defilerTitre;
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Styles CSS -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {   
+       
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(rgba(255,255,255,0.35), rgba(255,255,255,0.35)), url('v2.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #222;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    a {
+      text-decoration: none;
+      color: #006400;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      color: #228B22;
+      text-decoration: underline;
+    }
+
+    header {
+      background-color: red;
+      padding: 20px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      margin-left: 15px;
+      font-weight: 700;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 6px;
+    }
+
+    nav a:hover {
+      background-color: #1e5f3f;
+    }
+
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      background-color: #e6ffe6;
+      padding: 20px;
+    }
+
+    .menu a {
+      background-color: red;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .menu a:hover {
+      background-color: #228B22;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 30px 0;
+      font-size: 2.5rem;
+      color: red;
+    }
+
+    .columns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .colonne {
+      background-color: white;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .colonne strong {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+      color: red;
+    }
+
+    .colonne ul {
+      list-style: inside square;
+      padding-left: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: red;
+      color: white;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #228B22;
+    }
+
+    #info-general {
+      background-color: #fff;
+      padding: 30px;
+      border-top: 2px solid red;
+      margin-top: 30px;
+      color: #000;
+    }
+
+    #info-general h2 {
+      color: red;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    #info-general p {
+      margin: 5px 0;
+      font-weight: 500;
+    }
+
+    footer {
+      background-color: red;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: auto;
+    }
+
+    @media (max-width: 768px) {
+      .columns {
+        flex-direction: column;
+        align-items: center;
+      }
+      .menu {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>  
+  <header>
+    <div class="logo">Kin Marché Boma</div>
+    <nav>
+      <a href="#accueil">Accueil</a>
+    </nav>
+  </header>
+
+  <div class="menu">
+    <a href="partenaire.html">Partenaires</a>
+    <a href="photos.html">Photos</a>
+    <a href="produits.html">Produits</a>
+    <a href="points.html">Points de vente</a>
+    <a href="activites.html">Activités</a>
+  </div>
+
+  <h1>BIENVENU DANS LE KIN MARCHÉ DE BOMA</h1>
+
+  <div class="columns">
+    <div class="colonne">
+      <strong>Nos Activités</strong>
+      <ul>
+        <li>Vente de produits alimentaires</li>
+        <li>Distribution en gros & détail</li>
+        <li>Marché local & exportation</li>
+      </ul>
+   <a href="activites.html" class="btn">En savoir plus</a>
+    </div>
+    <div class="colonne">
+      <strong>Nos Partenaires</strong>
+      <ul>
+        <li>Bralima</li>
+        <li>Jumia RDC</li>
+        <li>Shoprite</li>
+      </ul>
+      <a href="partenaire.html" class="btn">Voir les partenaires</a>
+    </div>
+    <div class="colonne">
+      <strong>Nos Valeurs</strong>
+      <ul>
+        <li>Qualité & Accessibilité</li>
+        <li>Soutien à l'économie locale</li>
+        <li>Respect de l'environnement</li>
+      </ul>
+   <a href="activites.html" class="btn">Voir info général</a>
+  </div>
+
+  <section id="info-general">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
+      <!-- Contacts -->
+      <div style="flex: 1; min-width: 300px;">
+        <h2>📌 Informations Générales</h2>
+        <h3 style="color: #3b5998;">📱 Nos contacts :</h3>
+        <div style="display: flex; flex-direction: column; gap: 15px;">
+          <a href="tel:+243975000000" style="background-color: #00695c; color: white; padding: 15px; border-radius: 8px; text-decoration: none; font-weight: bold;">📞 Tél : +243 975000000</a>
+          <a href="mailto:contact@kinmarcheboma.com" style="background-color: #00695c; color: white; padding: 15px; border-radius: 8px; text-decoration: none; font-weight: bold;">✉️ Email : contact@kinmarcheboma.com</a>
+          <a href="https://facebook.com/kinmarcheboma" target="_blank" style="background-color: #3b5998; color: white; padding: 15px; border-radius: 8px; text-decoration: none; font-weight: bold;">📘 Facebook : Kin Marché Boma</a>
+          <a href="https://wa.me/243812345678" target="_blank" style="background-color: #25D366; color: white; padding: 15px; border-radius: 8px; text-decoration: none; font-weight: bold;">💬 WhatsApp : 0812345678</a>
+          <div style="background-color: #00695c; color: white; padding: 15px; border-radius: 8px; font-weight: bold;">📍 Adresse : Quartier Centre-ville, Boma, RDC</div>
+        </div>
+      </div>
+
+      <!-- Présentation -->
+      <div style="flex: 1; min-width: 280px; background-color: red; padding: 20px; border-radius: 10px; color: white; font-weight: bold;">
+        <p>
+          Bienvenue sur le site officiel de <strong>Kin Marché Boma</strong> !  
+          Ici, vous pouvez retrouver tous nos moyens de contact et rester informé de nos dernières activités.  
+          Notre équipe est disponible pour répondre à vos besoins rapidement et efficacement.  
+          Merci de votre confiance !  
+          Nous sommes une entreprise locale spécialisée dans la vente de produits de qualité, allant des articles ménagers, vêtements, accessoires électroniques jusqu’aux produits alimentaires.
+          <br><br>
+          Notre mission est de rendre vos achats plus simples, plus rapides et plus sûrs, tout en vous proposant des prix très compétitifs.
+          Grâce à notre plateforme en ligne, vous pouvez consulter nos produits, nos offres promotionnelles et passer vos commandes sans vous déplacer.
+          <br><br>
+          Kin Marché Boma, c’est la qualité à portée de main.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Kin Marché Boma - Tous droits réservés.
+  </footer>
+</body>
+</html>
